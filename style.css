@@ -5,6 +5,13 @@
 	box-sizing: border-box;
 }
 
+/* Geeral reset for Body and HTML */
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
 /* Colors */
 :root {
 	--gold: #D4AF37;
@@ -24,11 +31,20 @@ body {
 /* Header */
 header {
 	background-color: var(--tottenham-blue);
+	overflow-x: auto;
+	--webkit-overflow-scrolling: touch;
+	white-space: nowrap;
+	width: 100%;
 	color: var(--lily-white);
 	padding: 1em 2em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+header nav {
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 header nav h1 {
@@ -45,8 +61,15 @@ header nav ul li {
 }
 
 header nav ul li a {
+	display: inline-block;
 	color: var(--lily-white);
+	padding: 15px 20px;
 	text-decoration: none;
+	font-size: 1.1rem;
+}
+
+header nav a:hover {
+	background-color: var(--gold);
 }
 
 /* Hero Section */
@@ -73,6 +96,24 @@ header nav ul li a {
 	text-decoration: none;
 	border-radius: 5px;
 	font-weight: bold;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+	header nav a {
+		font-size: 1rem;
+		padding: 10px 15px;
+	}
+
+	/* Adjust hero text for mobile */
+	.hero h1 {
+		font-size: 1.8rem;
+	}
+
+	.hero p {
+		font-size: 1rem;
+		padding: 0 10px;
+	}
 }
 
 /* Section Styles */
