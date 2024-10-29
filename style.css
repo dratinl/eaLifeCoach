@@ -1,0 +1,141 @@
+/* Basic Reset */
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+	--gold: #D4AF37;
+	--tottenham-blue: #132257;
+	--lily-white: #E8E8E8;
+	--dark-text: #333;
+}
+
+/* Typography */
+body {
+	font-family: Arial, sans-serif;
+	color: var(--dark-text);
+	background-color: var(--lily-white);
+	line-height: 1.6;
+}
+
+/* Header */
+header {
+	background-color: var(--tottenham-blue);
+	color: var(--lily-white);
+	padding: 1em 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav h1 {
+	font-size: 1.5em;
+}
+
+header nav ul {
+	list-style-type: none;
+	display: flex;
+}
+
+header nav ul li {
+	margin-left: 1em;
+}
+
+header nav ul li a {
+	color: var(--lily-white);
+	text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+	/* background url('hero-image.jpg') center/cover no-repeat; */
+	background: linear-gradient(135deg, var(--tottenham-blue), var(--gold));
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--lily-white);
+}
+
+.hero-content h2 {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+}
+
+.hero-content .button {
+	background-color: var(--gold);
+	color: var(--tottenham-blue);
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+/* Section Styles */
+section {
+	padding: 3em 2em;
+}
+
+.about, .services, .testimonials, .contact {
+	text-align: center;
+}
+
+.about p, .services .service p {
+	max-width: 600px;
+	margin: 0.5em auto;
+}
+
+/* Services */
+.services .service {
+	background-color: var(--tottenham-blue);
+	color: var(--lily-white);
+	padding: 1.5em;
+	margin: 1em 0;
+	border-radius: 5px;
+}
+
+.services .service h3 {
+	color: var(--gold);
+}
+
+/* Contact Section */
+.contact form {
+	max-width: 600px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact label {
+	margin-top: 1em;
+	color: var(--tottenham-blue);
+}
+
+.contact input, .contact textarea {
+	padding: 0.5em;
+	border: 1px solid var(--tottenham-blue);
+	border-radius: 5px;
+}
+
+.contact .button {
+	background-color: var(--gold);
+	color: var(--tottenham-blue);
+	margin-top: 1em;
+	padding: 0.75em;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+/* Footer */
+footer {
+	background-color: var(--tottenham-blue);
+	color: var(--lily-white);
+	text-align: center;
+	padding: 1em 0;
+}
