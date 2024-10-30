@@ -34,7 +34,7 @@ header {
 	width: 100%;
 	color: var(--lily-white);
 	padding: 10px 0;
-	text-align: center;
+	text-align: left;
 }
 
 header h1 {
