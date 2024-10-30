@@ -49,14 +49,12 @@ header h1 {
 header nav {
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 	overflow-x: auto;
 	white-space: nowrap;
 	--webkit-overflow-scrolling: touch;
 	background-color: var(--tottenham-blue);
 	padding: 10px 0;
-	text-align: left;
-	align-items: left;
 	padding-left: 1rem;
 }
 
