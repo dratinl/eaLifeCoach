@@ -62,7 +62,7 @@
 	<!-- Contact Section --> 
 	<section id="contact" class="contact">
 		<h2>Contact Me</h2>
-		<form action="https://formspree.io/f/xzzbezeo" method="POST">
+		<form id="contact-form" action="https://formspree.io/f/xzzbezeo" method="POST">
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name">
 			<label for="email">Email:</label>
@@ -76,5 +76,31 @@
 	<footer>
 		<p>&copy; 2024 Life Coach. All rights reserved.</p>
 	</footer>
+
+	<script>
+		document.getElementByID('contact-form').addEventListener('submit', async function(event) {
+			event.preventDefault();
+			const form = event.target;
+
+			try {
+				const response = await fetch(form.action, {
+					method: form.method,
+					body: new FormData(form),
+					headers: {
+						'Accept': 'application/json'
+					}
+				});
+
+				if (response.ok) {
+					alert('Message sent successfully!');
+					form.reset();
+				} else{
+					alert('Failed to send message. Please try again.');
+				}
+			} catch (error) {
+				alert('Failed to send message. Please try again.');
+			}
+		});
+	</script>
 </body>
 </html>
