@@ -31,20 +31,10 @@ body {
 /* Header */
 header {
 	background-color: var(--tottenham-blue);
-	overflow-x: auto;
-	--webkit-overflow-scrolling: touch;
-	white-space: nowrap;
 	width: 100%;
 	color: var(--lily-white);
-	padding: 1em 2em;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-header nav {
-	display: flex;
-	flex-wrap: nowrap;
+	padding: 10px 0;
+	text-align: center;
 }
 
 header h1 {
@@ -54,19 +44,21 @@ header h1 {
 	padding: 5px 0;
 }
 
-header nav ul {
-	list-style-type: none;
+header nav {
 	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	overflow-x: auto;
+	white-space: nowrap;
+	--webkit-overflow-scrolling: touch;
+	background-color: var(--tottenham-blue);
+	padding: 10px 0;
 }
 
-header nav ul li {
-	margin-left: 1em;
-}
-
-header nav ul li a {
+header nav a {
 	display: inline-block;
 	color: var(--lily-white);
-	padding: 15px 20px;
+	padding: 10px 15px;
 	text-decoration: none;
 	font-size: 1.1rem;
 }
@@ -110,6 +102,10 @@ header nav a:hover {
 	header nav a {
 		font-size: 1rem;
 		padding: 10px 15px;
+	}
+
+	header h1 {
+		font-size: 1.5rem;
 	}
 
 	/* Adjust hero text for mobile */
