@@ -33,6 +33,7 @@ header {
 	background-color: var(--tottenham-blue);
 	width: 100%;
 	color: var(--lily-white);
+	padding-left: 1rem;
 	padding: 10px 0;
 	text-align: left;
 }
@@ -53,6 +54,7 @@ header nav {
 	--webkit-overflow-scrolling: touch;
 	background-color: var(--tottenham-blue);
 	padding: 10px 0;
+	text-align: left;
 }
 
 header nav a {
