@@ -46,6 +46,14 @@ header h1 {
 	padding-left: 1rem;
 }
 
+.subtitle {
+	font-size: 1rem;
+	color: var(--lily-white);
+	text-align: left;
+	margin: 0.2rem 0 0 0;
+
+}
+
 .gold {
 	color: gold;
 	display: inline;
