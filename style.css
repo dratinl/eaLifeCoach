@@ -46,6 +46,21 @@ header h1 {
 	padding-left: 1rem;
 }
 
+.gold {
+	color: gold;
+}
+
+.blue-bg {
+	color: white;
+	background-color: var(--tottenham-blue);
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.2rem;
+}
+
+.royal-blue {
+	color: #4169e1;
+}
+
 header nav {
 	display: flex;
 	flex-wrap: nowrap;
