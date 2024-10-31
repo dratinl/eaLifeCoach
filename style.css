@@ -124,6 +124,9 @@ header nav a:hover {
 	text-decoration: none;
 	border-radius: 5px;
 	font-weight: bold;
+	max-width: 100%;
+	white-space: normal;
+	text-align: center;
 }
 
 /* Responsive Adjustments for Smaller Screens */
