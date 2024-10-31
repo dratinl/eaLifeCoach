@@ -48,6 +48,7 @@ header h1 {
 
 .gold {
 	color: gold;
+	display: inline;
 }
 
 .blue-bg {
@@ -55,10 +56,12 @@ header h1 {
 	background-color: var(--tottenham-blue);
 	padding: 0.2rem 0.4rem;
 	border-radius: 0.2rem;
+	display: inline;
 }
 
 .royal-blue {
 	color: #4169e1;
+	display: inline;
 }
 
 header nav {
