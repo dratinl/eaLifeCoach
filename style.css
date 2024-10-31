@@ -51,7 +51,7 @@ header h1 {
 	color: var(--lily-white);
 	text-align: left;
 	margin: 0.2rem 0 0 0;
-	padding-left: 5px;
+	padding-left: 1rem;
 }
 
 .gold {
