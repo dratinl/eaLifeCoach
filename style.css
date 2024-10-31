@@ -22,7 +22,8 @@ html, body {
 
 /* Typography */
 body {
-	font-family: Arial, sans-serif;
+	/*font-family: Arial, sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
 	color: var(--dark-text);
 	background-color: var(--lily-white);
 	line-height: 1.6;
@@ -128,6 +129,7 @@ header nav a:hover {
 	max-width: 100%;
 	white-space: nowrap;
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 480px) {
@@ -138,6 +140,7 @@ header nav a:hover {
 		white-space: normal;
 		text-align: center;
 		line-height: 1.2;
+		font-family: 'Montserrat', sans-serif;
 	}
 }
 
