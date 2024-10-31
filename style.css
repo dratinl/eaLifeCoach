@@ -54,7 +54,6 @@ header h1 {
 .blue-bg {
 	color: white;
 	background-color: var(--tottenham-blue);
-	padding: 0.2rem 0.4rem;
 	border-radius: 0.2rem;
 	display: inline;
 }
