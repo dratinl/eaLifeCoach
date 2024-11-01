@@ -134,10 +134,11 @@ header nav a:hover {
 }
 
 @media (max-width: 480px) {
-	.hero button {
+	.hero-content .button {
 		font-size: 0.9rem;
 		padding: 0.6rem 1rem;
 		width: 80%;
+		max-width: 80%;
 		white-space: normal;
 		text-align: center;
 		line-height: 1.2;
