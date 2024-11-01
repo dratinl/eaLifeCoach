@@ -79,7 +79,20 @@
 	<footer>
 		<p>&copy;<span id="current-year"></span> LCoachEdwin LLC. All rights reserved.</p>
 	</footer>
+	<script>
+		function setVh() {
+			// Get the viewport heigh and multiply by 1% to get a value for 1vh
+			let vh = window.innerHeight * 0.01;
+			// Set the value in a custom property
+			document.documentElement.style.setProperty('--vh', '${vh}px');
+		}
 
+		// set the value on page load
+		setVh();
+
+		// Update the value on resize
+		window.addEventListener('resize', setVh)
+	</script>
 	<script>
 		document.getElementById('contact-form').addEventListener('submit', async function(event) {
 			event.preventDefault();

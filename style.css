@@ -106,7 +106,7 @@ header nav a:hover {
 .hero {
 	/* background url('hero-image.jpg') center/cover no-repeat; */
 	background: linear-gradient(135deg, var(--tottenham-blue), var(--gold));
-	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	display: flex;
 	justify-content: center;
 	align-items: center;
